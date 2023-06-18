@@ -1,14 +1,20 @@
-#include<stdio.h>
+#include <stdio.h>
+
 /**
- * main  - prints alpha in lower case
- * Return: Always 0
+ * main - Entry point
+ *
+ *
+ * Return: Always 0 (Sucess)
  */
+
 int main(void)
-char lc;
-for (lc = 'a'; lc <= 'z'; lc++);
 {
-	putchar(lc);
-}
-putchar('\n');
-return (0);
+	char c;
+
+	for (c = 'a' ; c <= 'z' ; c++)
+	{
+		putchar(c);
+	}
+	putchar('\n');
+	return (0);
 }
