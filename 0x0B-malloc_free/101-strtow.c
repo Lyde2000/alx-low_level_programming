@@ -24,7 +24,7 @@ w++;
 return (w);
 }
 /**
- * **strtoq - splits a string into words
+ * strtoq - splits a string into words
  * @str: string to split
  *
  * Return: pointer to an array of strings (Success)
@@ -49,8 +49,8 @@ if (str[i] == ' ' || str[i] == '\0')
 if (c)
 {
 end = i;
-*tmp = (char *) malloc(sizeof(char) * (c + 1));
-if (tmp = NULL)
+tmp = (char *) malloc(sizeof(char) * (c + 1));
+if (tmp == NULL)
 return (NULL);
 while (start < end)
 *tmp++ = str[start++];
